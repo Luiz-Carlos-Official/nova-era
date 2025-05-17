@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(ellipse at center, #0f0f0f 0%, #000000 100%);
+  font-family: 'Orbitron', sans-serif;
+  color: #00fff7;
+  overflow: hidden;
+}
+
+#game-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  background: url('assets/img/lab_background.jpg') center/cover no-repeat;
+  backdrop-filter: blur(2px);
+}
+
+#hud {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border: 1px solid #00fff7;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #00fff7;
+}
+
+.glitch {
+  font-size: 2.5em;
+  text-shadow: 0 0 5px #00fff7, 0 0 15px #0ff, 0 0 25px #0ff;
+}
+
+#scene-text {
+  margin: 20px 0;
+  font-size: 1.2em;
+}
+
+#choices {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button {
+  background-color: transparent;
+  color: #00fff7;
+  border: 1px solid #00fff7;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: #00fff7;
+  color: #000;
+}
